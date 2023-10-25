@@ -79,24 +79,27 @@ class _HomepageState extends State<Homepage> {
                           color: const Color.fromARGB(255, 61, 129, 118),
                           borderRadius: BorderRadius.circular(30)),
                       child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
+                        // crossAxisAlignment: CrossAxisAlignment.start,
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Text(
-                                "Total Balance",
-                                style: GoogleFonts.inter(
-                                    fontSize: 20, color: Colors.white),
-                              ),
-                              IconButton(
-                                  onPressed: () {},
-                                  icon: const Icon(
-                                    Icons.more_horiz,
-                                    color: Colors.white,
-                                  ))
-                            ],
+                          SizedBox(
+                            width: width * 0.7,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                Text(
+                                  "Total Balance",
+                                  style: GoogleFonts.inter(
+                                      fontSize: 20, color: Colors.white),
+                                ),
+                                IconButton(
+                                    onPressed: () {},
+                                    icon: const Icon(
+                                      Icons.more_horiz,
+                                      color: Colors.white,
+                                    ))
+                              ],
+                            ),
                           ),
                           Text(
                             "2,400.00",
@@ -106,6 +109,7 @@ class _HomepageState extends State<Homepage> {
                                 color: Colors.white),
                           ),
                           Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               Column(
                                 children: [
@@ -123,6 +127,7 @@ class _HomepageState extends State<Homepage> {
                                               color: Colors.white,
                                             )),
                                       ),
+                                      SizedBox(width: width * 0.02,),
                                       Text(
                                         "Income",
                                         style: GoogleFonts.inter(
@@ -154,6 +159,7 @@ class _HomepageState extends State<Homepage> {
                                               color: Colors.white,
                                             )),
                                       ),
+                                      SizedBox(width: width * 0.02,),
                                       Text(
                                         "Expenses",
                                         style: GoogleFonts.inter(
