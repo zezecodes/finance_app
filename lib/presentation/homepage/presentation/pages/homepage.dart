@@ -115,6 +115,7 @@ class _HomepageState extends State<Homepage> {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Column(
+                                    mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       Row(
                                         children: [
@@ -132,7 +133,7 @@ class _HomepageState extends State<Homepage> {
                                                 )),
                                           ),
                                           SizedBox(
-                                            width: width * 0.02,
+                                            width: width * 0.01,
                                           ),
                                           Text(
                                             "Income",
@@ -142,15 +143,16 @@ class _HomepageState extends State<Homepage> {
                                           ),
                                         ],
                                       ),
-                                      Text("1,400",
-                                          style: GoogleFonts.inter(
-                                              fontSize: 13,
-                                              color: Colors.white))
+                                      Padding(
+                                        padding: EdgeInsets.only(left: width * 0.08),
+                                        child: Text("1,400,000.00",
+                                            style: GoogleFonts.inter(
+                                                fontSize: 13,
+                                                color: Colors.white)),
+                                      )
                                     ],
                                   ),
-                                  SizedBox(
-                                    width: width * 0.25,
-                                  ),
+                                  
                                   Column(
                                     children: [
                                       Row(
@@ -179,10 +181,13 @@ class _HomepageState extends State<Homepage> {
                                           ),
                                         ],
                                       ),
-                                      Text(
-                                        "249",
-                                        style: GoogleFonts.inter(
-                                            fontSize: 13, color: Colors.white),
+                                      Padding(
+                                        padding: EdgeInsets.only(left: width * 0.08),
+                                        child: Text(
+                                          "1,249,000.00",
+                                          style: GoogleFonts.inter(
+                                              fontSize: 13, color: Colors.white),
+                                        ),
                                       )
                                     ],
                                   ),
@@ -195,23 +200,26 @@ class _HomepageState extends State<Homepage> {
                     )),
               ],
             ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Text(
-                  "Transaction History",
-                  style: GoogleFonts.inter(
-                      fontSize: 20, fontWeight: FontWeight.w600),
-                ),
-                SizedBox(width: width * 0.1),
-                TextButton(
-                    onPressed: () {},
-                    child: Text(
-                      "See all",
-                      style:
-                          GoogleFonts.inter(color: Colors.grey, fontSize: 15),
-                    ))
-              ],
+            Padding(
+              padding: EdgeInsets.only(top: height * 0.1),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Text(
+                    "Transaction History",
+                    style: GoogleFonts.inter(
+                        fontSize: 20, fontWeight: FontWeight.w600),
+                  ),
+                  SizedBox(width: width * 0.1),
+                  TextButton(
+                      onPressed: () {},
+                      child: Text(
+                        "See all",
+                        style:
+                            GoogleFonts.inter(color: Colors.grey, fontSize: 15),
+                      ))
+                ],
+              ),
             ),
           ],
         ),
