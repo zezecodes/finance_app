@@ -26,39 +26,44 @@ class _HomepageState extends State<Homepage> {
                   borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(30),
                       bottomRight: Radius.circular(30))),
-              child: Column(children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Column(
-                      children: [
-                        Text(
-                          "Good Afternoon",
-                          style: GoogleFonts.inter(
-                              fontSize: 18, color: Colors.white),
-                        ),
-                        Text(
-                          "Aaron Djangmah",
-                          style: GoogleFonts.inter(
-                              fontSize: 22,
-                              color: Colors.white,
-                              fontWeight: FontWeight.w600),
-                        )
-                      ],
-                    ),
-                    Container(
-                        width: width * 0.1,
-                        height: height * 0.05,
-                        decoration: BoxDecoration(
-                            color: Colors.black,
-                            borderRadius: BorderRadius.circular(10)),
-                        child: IconButton(
-                            onPressed: () {},
-                            icon: const Icon(
-                              Icons.notifications,
-                              color: Colors.white,
-                            )))
-                  ],
+              child: Column(
+                children: [
+                SizedBox(height: height * 0.02,),
+                SizedBox(
+                  width: width * 0.9,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Column(
+                        children: [
+                          Text(
+                            "Good Afternoon",
+                            style: GoogleFonts.inter(
+                                fontSize: 18, color: Colors.white),
+                          ),
+                          Text(
+                            "Aaron Djangmah",
+                            style: GoogleFonts.inter(
+                                fontSize: 22,
+                                color: Colors.white,
+                                fontWeight: FontWeight.w600),
+                          )
+                        ],
+                      ),
+                      Container(
+                          width: width * 0.1,
+                          height: height * 0.05,
+                          decoration: BoxDecoration(
+                              color: Colors.black,
+                              borderRadius: BorderRadius.circular(10)),
+                          child: IconButton(
+                              onPressed: () {},
+                              icon: const Icon(
+                                Icons.notifications,
+                                color: Colors.white,
+                              )))
+                    ],
+                  ),
                 ),
               ]),
             ),
