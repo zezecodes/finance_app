@@ -30,7 +30,22 @@ class _HomepageState extends State<Homepage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Column(children: [Text("Good Afternoon"), Text("Aaron Djangmah")],),
+                    Column(
+                      children: [
+                        Text(
+                          "Good Afternoon",
+                          style: GoogleFonts.inter(
+                              fontSize: 18, color: Colors.white),
+                        ),
+                        Text(
+                          "Aaron Djangmah",
+                          style: GoogleFonts.inter(
+                              fontSize: 22,
+                              color: Colors.white,
+                              fontWeight: FontWeight.w600),
+                        )
+                      ],
+                    ),
                     Container(
                         width: width * 0.1,
                         height: height * 0.05,
@@ -166,11 +181,11 @@ class _HomepageState extends State<Homepage> {
                             onPressed: () {},
                             child: Text(
                               "See all",
-                              style: GoogleFonts.inter(color: Colors.grey, fontSize: 15),
+                              style: GoogleFonts.inter(
+                                  color: Colors.grey, fontSize: 15),
                             ))
                       ],
                     ),
-                    
                   ],
                 )),
           ],
