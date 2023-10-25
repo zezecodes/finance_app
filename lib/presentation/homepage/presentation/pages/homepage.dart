@@ -30,11 +30,7 @@ class _HomepageState extends State<Homepage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    RichText(
-                      text: TextSpan(
-                          text: "Good Afternoon",
-                          style: GoogleFonts.inter(fontSize: 20)),
-                    ),
+                    Column(children: [Text("Good Afternoon"), Text("Aaron Djangmah")],),
                     Container(
                         width: width * 0.1,
                         height: height * 0.05,
