@@ -112,7 +112,6 @@ class _HomepageState extends State<Homepage> {
                                     color: Colors.white),
                               ),
                               Row(
-                                mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
                                   Column(
                                     mainAxisAlignment: MainAxisAlignment.center,
@@ -152,7 +151,7 @@ class _HomepageState extends State<Homepage> {
                                       )
                                     ],
                                   ),
-                                  
+                                  SizedBox(width: width * 0.1,),
                                   Column(
                                     children: [
                                       Row(
@@ -202,23 +201,26 @@ class _HomepageState extends State<Homepage> {
             ),
             Padding(
               padding: EdgeInsets.only(top: height * 0.1),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Text(
-                    "Transaction History",
-                    style: GoogleFonts.inter(
-                        fontSize: 20, fontWeight: FontWeight.w600),
-                  ),
-                  SizedBox(width: width * 0.1),
-                  TextButton(
-                      onPressed: () {},
-                      child: Text(
-                        "See all",
-                        style:
-                            GoogleFonts.inter(color: Colors.grey, fontSize: 15),
-                      ))
-                ],
+              child: SizedBox(
+                width: width * 0.95,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Text(
+                      "Transaction History",
+                      style: GoogleFonts.inter(
+                          fontSize: 20, fontWeight: FontWeight.w600),
+                    ),
+                    SizedBox(width: width * 0.1),
+                    TextButton(
+                        onPressed: () {},
+                        child: Text(
+                          "See all",
+                          style:
+                              GoogleFonts.inter(color: Colors.grey, fontSize: 15),
+                        ))
+                  ],
+                ),
               ),
             ),
           ],
